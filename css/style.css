@@ -124,10 +124,10 @@ nav {
 #recherche {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     justify-content: flex-start;
     margin-left: 55px;
     text-align:center;
+    margin-top: 20px;
 }
 
 #btn_rsh {
@@ -142,4 +142,93 @@ nav {
     line-height: 21px;
     text-align: center;
 
+}
+
+.rch_filtres {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 15px;
+    margin-left: 62px;
+    margin-top: 15px;
+    box-sizing: border-box;
+}
+
+.titres {
+    display: flex;
+    font-size: 18px;
+    text-align: center;
+    width: 54px;
+    height: 21px;
+
+}
+
+.eco_icon {
+    color: #0065FC;
+}
+
+.rch_eco {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    align-items: flex-start;
+    padding: 4px 20px;
+}
+
+.fam_icon {
+    color: #0065FC;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+}
+
+.rch_fam {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    padding: 4px 20px;
+}
+
+.rom_icon {
+    color: #0065FC;
+    display: flex;
+    flex-direction: row;
+}
+
+.rch_rom {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    padding: 4px 20px;
+}
+
+.animaux_icon {
+    color: #0065FC;
+    display: flex;
+    flex-direction: row;
+}
+
+.rch_animaux {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    padding: 4px 20px;
+}
+
+.result_icon {
+    color: #0065FC;
+    display: flex;
+    flex-direction: row;
+}
+
+.resultatrch {
+    display: flex;
+    margin-top: 15px;
 }
