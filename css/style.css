@@ -9,6 +9,10 @@ body {
     margin-top: 6px;
 }
 
+h1, h2, h3 {
+    font-weight: 700;
+}
+
 h1 {
     font-size: 22px;
 }
@@ -83,20 +87,33 @@ nav {
     margin-right: 77px;
 }
 
-.hebergnav {
-    margin-top: 45px;
+.section_recherche {
+    margin-top: 40px;
 }
 
-#location {
+.titre_section_recherche {
+    margin: 15px 0 13px;
+}
+
+
+.localisation {
     background-color:#D9D9D9;
     border: solid 1px #F2F2F2;
     border-radius: 15px 0 0 15px;
     height: 49px;
     width: 50px;
-    justify-content: center;
+    right: 84.94%;
     display: flex;
-    flex-direction: row;
     align-items: center;
+    justify-content: center;    
+}
+
+.section_texte {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: black;
+
 }
 
 .srch_btn_phn {
@@ -117,27 +134,35 @@ nav {
 
 .inp_recherche {
     font-family: 'Raleway';
-    padding: 0 1.5rem;
+    padding: 19px;
     border: 1px solid #F2F2F2;
-    border: radius 15px;;
+    border: 15px;
     border-left:none;
     border-right: none;
     box-sizing: border-box;
-    font-weight: 700;
     line-height: 21px;
+    max-width: 332px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
     font-size: 18px;
+    font-weight: 700;
 }
 
-#recherche {
+.form {
+    margin-top: 23px;
+}
+
+.groupe_form {
+    display: flex;
+    align-items: center;
+}
+
+
+#btn_rsh_desktop {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    margin-left: 55px;
-    text-align:center;
-    margin-top: 20px;
-}
-
-#btn_rsh {
+    align-items: center;
     background-color: #0065FC;
     border: 1px solid #0065FC;
     border-radius: 0 15px 15px 0;
@@ -148,6 +173,8 @@ nav {
     font-style: normal;
     line-height: 21px;
     text-align: center;
+    
+    gap: 10px;
 
 }
 
@@ -172,6 +199,7 @@ nav {
 
 .eco_icon {
     color: #0065FC;
+    margin-right: 10px;
 }
 
 .rch_eco {
@@ -239,18 +267,58 @@ nav {
     flex-direction: row;
 }
 
-.resultatrch {
+.hebergRech {
     display: flex;
-    margin-top: 15px;
+    flex-direction: row;
+    background: #F2F2F2;
+    border-radius: 20px;
 }
 
-#hebergement {
-    width: 100%;
-    height: 500px;
-    border-radius: 25px;
-    background-color: #f4f3f3f3;
+.section_content {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.hebergementcard {
-    background-color: white;
+.container_card {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-around;
+    margin-top:25px;
+}
+
+.afficher_plus {
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    
+}
+
+.plus_populaires {
+    margin-left: 30px;
+    background: #F2F2F2;
+    border-radius: 20px;
+    width: 420px;
+    height: 625px;
+}
+
+.activites {
+    margin-top: 50px;
+}
+
+.pied_de_page {
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+figure {
+    padding: 20px;
 }
