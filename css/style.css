@@ -378,7 +378,7 @@ footer {
     height: 124px;
     border-radius: 20px 20px 0 0;
 }
-/* CSS pour les les plus populaires */
+/* CSS pour les hébergement les plus populaires */
 
 .plus_populaires {
     width: 420px;
@@ -387,11 +387,28 @@ footer {
     border-radius: 20px;
 }
 
-.container_pp img {
+aside .container_pp {
+    width: 343px;
+    height: 144px;
+    border-radius: 20px;
+    background: #ffffff;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-end;
+}
+
+.cardimg_pp img {
     width: 137px;
     height: 144px;
     box-sizing: border-box;
+    border: 5px solid #ffffff;
+    border-radius: 20px 0 0 20px;
 }
+
 
 /* CSS pour la partie activités */
 #sectionactivites {
