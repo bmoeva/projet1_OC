@@ -1,12 +1,9 @@
-* {
-    margin: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+
 
 body {
     font-family:'Raleway', sans-serif;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    margin-top: 6px;
+    padding: 0 53px 0 53px;
 }
 
 h1, h2, h3 {
@@ -47,6 +44,11 @@ a:hover {
 
 .container2:hover {
     border-top: #0065FC solid 2px;
+}
+
+header .menunav {
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo {
@@ -262,18 +264,32 @@ nav {
 }
 
 .result_icon {
-    color: #0065FC;
     display: flex;
     flex-direction: row;
+    border: 1px solid #D9D9D9;
+    width: 24px;
+    height: 24px;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-.afficher_plus {
-    margin-top: 50px;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 21px;
-    
+.result_icon i {
+    color: #0065FC;
+    width: 5px;
+    height: 14.04px;
 }
+
+.resultatrch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 11px;
+}
+
+
 
 #activitesMarseille {
     margin-top: 50px;
@@ -327,19 +343,26 @@ footer {
     border-radius: 20px;
     width: 880px;
     height: 626px;
-    top: 42px;
 }
 
-.titre_hebergementMarseille {
-    width: 278px;
+
+.titre_hebergementMarseille h2 {
+    width: 280px;
     line-height: 26px;
-    left: 40px;
+    margin-left: 40px;
+    margin-top: 42px;
     font-size: 22px;
     font-weight: 700;
     color: #000000;
 }
 
-
+.afficher_plus {
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    
+}
 
 /* Première ligne */
 .premiereligne {
@@ -354,7 +377,6 @@ footer {
     border-radius: 20px;
     width: 246px;
     height: 199px;
-    margin-top: 23px;
 }
 
 /* Deuxièeme ligne */
@@ -377,8 +399,15 @@ footer {
     width: 246px;
     height: 124px;
     border-radius: 20px 20px 0 0;
+    object-fit: cover;
 }
 /* CSS pour les hébergement les plus populaires */
+
+.titlt_pp {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
 .plus_populaires {
     width: 420px;
@@ -387,7 +416,7 @@ footer {
     border-radius: 20px;
 }
 
-aside .container_pp {
+.container_pp {
     width: 343px;
     height: 144px;
     border-radius: 20px;
@@ -397,8 +426,6 @@ aside .container_pp {
 .infos {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-content: flex-end;
 }
 
 .cardimg_pp img {
@@ -407,6 +434,7 @@ aside .container_pp {
     box-sizing: border-box;
     border: 5px solid #ffffff;
     border-radius: 20px 0 0 20px;
+    object-fit: cover;
 }
 
 
@@ -423,7 +451,16 @@ aside .container_pp {
 .titre_activites {
     display: flex;
     flex-direction: row;
-    margin-top: 50px;
+    top: 1112px;
+    left: 50px;
+}
+
+.titre_activites h2 {
+    font-size: 22px;
+    width: 212px;
+    height: 30.02px;
+    font-weight: 700;
+    left: 50px;
 }
 
 .description {
@@ -439,12 +476,17 @@ aside .container_pp {
 }
 
 .description h3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     width: 247px;
     height: 15px;
     left: 19px;
     bottom: 20.51px;
     line-height: 19px;
+    font-size: 16px;
 }
+
 
 .activitescard img {
     border-radius: 20px 20px 0 0;
