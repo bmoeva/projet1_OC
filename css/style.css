@@ -267,27 +267,6 @@ nav {
     flex-direction: row;
 }
 
-.hebergRech {
-    display: flex;
-    flex-direction: row;
-    background: #F2F2F2;
-    border-radius: 20px;
-}
-
-.section_content {
-    display: flex;
-    margin-top: 50px;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.container_card {
-    display:flex;
-    flex-flow:row wrap;
-    justify-content:space-around;
-    margin-top:25px;
-}
-
 .afficher_plus {
     margin-top: 50px;
     font-size: 18px;
@@ -296,16 +275,11 @@ nav {
     
 }
 
-.plus_populaires {
-    margin-left: 30px;
-    background: #F2F2F2;
-    border-radius: 20px;
-    width: 420px;
-    height: 625px;
-}
-
-.activites {
+#activitesMarseille {
     margin-top: 50px;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
 }
 
 .pied_de_page {
@@ -319,6 +293,145 @@ ul{
     list-style-type: none;
 }
 
-figure {
-    padding: 20px;
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+    background-color: #F2F2F2;
+    padding: 70px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+/* Pour mes test brouillon */
+
+/* CSS pour la partie hébergement à Marseille */
+
+#hebergement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hebergement {
+    background: #F2F2F2;
+    border-radius: 20px;
+    width: 880px;
+    height: 626px;
+    top: 42px;
+}
+
+.titre_hebergementMarseille {
+    width: 278px;
+    line-height: 26px;
+    left: 40px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #000000;
+}
+
+
+
+/* Première ligne */
+.premiereligne {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.ligne_1 {
+    border: 5px solid white;
+    background: #ffffff;
+    border-radius: 20px;
+    width: 246px;
+    height: 199px;
+    margin-top: 23px;
+}
+
+/* Deuxièeme ligne */
+.deuxiemeligne {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.ligne_2 {
+    border: 5px solid white;
+    background: #ffffff;
+    border-radius: 20px;
+    width: 246px;
+    height: 199px;
+    margin-top: 30px;
+}
+/* CSS card de l'hébergement */
+.cardimg img {
+    width: 246px;
+    height: 124px;
+    border-radius: 20px 20px 0 0;
+}
+/* CSS pour les les plus populaires */
+
+.plus_populaires {
+    width: 420px;
+    height: 625px;
+    background: #F2F2F2;
+    border-radius: 20px;
+}
+
+.container_pp img {
+    width: 137px;
+    height: 144px;
+    box-sizing: border-box;
+}
+
+/* CSS pour la partie activités */
+#sectionactivites {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 43px;
+    margin-bottom: 60px;
+    margin-top: 10px;
+}
+
+.titre_activites {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.description {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 0 0 20px 20px;
+    background-color: white;
+    height: 56px;
+    width: 302px;
+    top: 389px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.description h3 {
+    width: 247px;
+    height: 15px;
+    left: 19px;
+    bottom: 20.51px;
+    line-height: 19px;
+}
+
+.activitescard img {
+    border-radius: 20px 20px 0 0;
+    width: 302px;
+    height: 445px;
+    object-fit: cover;
 }
