@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
 
-
+* {
+    font-family: 'Raleway' sans-serif;
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family:'Raleway', sans-serif;
 }
@@ -386,15 +390,18 @@ nav {
 
 #hebergement {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    padding-left: 45px;
+    padding-right: 45px;
 }
 
 .hebergement {
     background: #F2F2F2;
     border-radius: 20px;
+    padding: 3%;
     width: 880px;
     height: 626px;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -402,7 +409,6 @@ nav {
     width: 280px;
     line-height: 26px;
     margin-left: 40px;
-    margin-top: 42px;
     font-size: 22px;
     font-weight: 700;
     color: #000000;
@@ -413,22 +419,18 @@ nav {
 .infos_hebergementMarseille {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
 }
 
 .titre_h3 {
-    margin-top: 5px;
     margin-left: 10px;
 }
 
 .textprix {
-    margin-top: -15px;
     margin-left: 10px;
 }
 
 .note_hebergement {
     margin-left: 10px;
-    margin-top: -15px;
 }
 
 /* Première ligne */
@@ -523,6 +525,7 @@ nav {
     height: 625px;
     background: #F2F2F2;
     border-radius: 20px;
+    margin-left: 42px;
 }
 
 .container_pp {
