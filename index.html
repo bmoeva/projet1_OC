@@ -17,20 +17,26 @@
 	<title>BOOKI-Agence de voyage</title>
 </head>
     <body>
-        <header> <!-- Ceci est mon en-tête -->
+      <!-- Ceci est mon en-tête -->
+        <header> 
+          <!-- Mon logo sera ici -->
+          <div class="mon_logo"> 
+            <a href="index.html">
+          <img class="logo" src="images/logo/Booki@3x.png" alt="Logo de Booki"> 
+            </a>
+          </div>
             <nav>
-                <img class="logo" src="images/logo/Booki.png" alt="Logo de Booki"> <!-- Mon logo sera ici -->
-            
                 <!-- Menu de navigation -->
-                <div class="menunav">
-                    <div class="container1">
-                    <a class="hebergnav" href="#hebergements">Hébergements</a>
-                </div>
-                <div class="container2">
-                    <a class="activnav" href="#activites">Activités</a>
-                </div>
-                </div>
+              <ul class="menunav">
+                    <li class="nav_hebergement">
+                        <a href="#hebergements">Hébergements</a>
+                    </li>
+                    <li class="nav_activites">
+                        <a href="#">Activités</a>
+                    </li>
+                    </ul>
             </nav>
+        </header>
 
         <main class="contenu_main">
             <section class="section_recherche">
@@ -341,11 +347,12 @@
     </section>
 
     <!-- Partie activités -->
+    
+  <section id="sectionactivites">
     <div class="titre_activites">
       <h2>Activités à Marseille</h2>
     </div>
-  <section id="sectionactivites">
-    
+    <div class="groupe_activites">
           <div class="activitescard">
             <a href="">
             <img src="images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
@@ -381,6 +388,7 @@
             </div>
             </a>
           </div>
+    </div>
   </section>
 
 </main>

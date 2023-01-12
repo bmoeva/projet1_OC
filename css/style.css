@@ -7,6 +7,8 @@
 }
 body {
     font-family:'Raleway', sans-serif;
+    min-width: 320px;
+    display: block;
 }
 
 h1, h2, h3 {
@@ -34,50 +36,58 @@ a:hover {
     color: #0065FC;
 }
 
-header .menunav {
+/* Ici ce trouve le css pour mon header */
+
+/* Menu de navigation */
+
+header {
     display: flex;
     justify-content: space-between;
+}
+
+ul.menunav {
+    display: flex;
+    font-weight: 500;
+}
+
+ul.menunav:hover {
+    font-weight: 500;
+}
+
+li.nav_hebergement {
+    width: 200px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+li.nav_activites {
+    width: 200px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+li.nav_hebergement:hover, 
+li.nav_activites:hover, 
+li.nav_hebergement:focus, 
+li.nav_activites:focus, 
+li.nav_hebergement:active, 
+li.nav_activites:active {
+    border-top: 3px solid #0065FC;;
+    color: #0065FC;  
 }
 
 /* CSS pour le logo */
 .logo {
     width: 61.09px;
     height: 19px;
-    margin-left: 55px;
-  
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 74px;
-    margin-top: 45px;
+.mon_logo {
+    padding-top: 60px;
+    padding-left: 55px;
 }
 
-.menunav {
-    width: 30%;
-    display: flex;
-    justify-content: space-around;
-}
 
-.container1 {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    width: 50%;
-    font-weight: 500;
-    margin-right: 67px;
-}
-
-.container2 {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    width: 50%;
-    font-weight: 400;
-    margin-right: 77px;
-}
 
 /* Ici c'est le css pour la partie recherche */
 
@@ -406,12 +416,14 @@ nav {
 
 
 .titre_hebergementMarseille h2 {
-    width: 280px;
+    width: 279px;
     line-height: 26px;
     margin-left: 40px;
     font-size: 22px;
     font-weight: 700;
     color: #000000;
+    box-sizing: border-box;
+    position: relative;
 }
 
 /* Partie infos hébergement Marseille */
@@ -419,6 +431,7 @@ nav {
 .infos_hebergementMarseille {
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 .titre_h3 {
@@ -438,14 +451,16 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    box-sizing: border-box;
+    margin-top: 30px;
 }
 
 .ligne_1 {
-    border: 5px solid white;
     background: #ffffff;
     border-radius: 20px;
     width: 246px;
     height: 199px;
+    box-sizing: border-box;
 }
 
 /* Deuxièeme ligne */
@@ -453,16 +468,17 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 2px;
+    margin-top: 30px;
+    box-sizing: border-box;
 }
 
 .ligne_2 {
-    border: 5px solid white;
     background: #ffffff;
     border-radius: 20px;
     width: 246px;
     height: 199px;
     margin-top: 40px;
+    box-sizing: border-box;
 }
 /* CSS card de l'hébergement */
 .cardimg img {
@@ -470,6 +486,8 @@ nav {
     height: 124px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
+    box-sizing: border-box;
+    border: 5px solid #FFFFFF;
 }
 
 /* Afficher plus */
@@ -498,6 +516,14 @@ nav {
 
 /* CSS pour les hébergement les plus populaires */
 
+.plus_populaires {
+    width: 420px;
+    height: 625px;
+    background: #F2F2F2;
+    border-radius: 20px;
+    margin-left: 42px;
+}
+
 .titre_pp {
     display: flex;
     flex-direction: row;
@@ -518,14 +544,6 @@ nav {
     width: 18px;
     height: 15px;
     margin-top: 46px;
-}
-
-.plus_populaires {
-    width: 420px;
-    height: 625px;
-    background: #F2F2F2;
-    border-radius: 20px;
-    margin-left: 42px;
 }
 
 .container_pp {
@@ -604,19 +622,39 @@ nav {
 /* CSS pour la partie activités */
 #sectionactivites {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: px;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
     margin-bottom: 60px;
-    margin-top: 11px;
+    margin-top: 55px;
+    box-sizing: border-box;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.groupe_activites {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 21px;
+}
+
+.activitescard {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 20px 20px 20px 20px;
+
+
 }
 
 /* Pour le titre h2 de la partie activités */
+
 .titre_activites {
     display: flex;
     flex-direction: row;
-    top: 1112px;
-    left: 50px;
 }
 
 .titre_activites h2 {
@@ -624,7 +662,7 @@ nav {
     width: 212px;
     height: 30.02px;
     font-weight: 700;
-    left: 50px;
+    margin-left: 55px;
 }
 
 /* Partie description pour le h3 */
@@ -637,7 +675,7 @@ nav {
     height: 56px;
     width: 302px;
     top: 389px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    
 }
 
 .description h3 {
