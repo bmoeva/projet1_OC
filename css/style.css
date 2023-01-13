@@ -9,7 +9,7 @@ body {
     font-family:'Raleway', sans-serif;
     min-width: 320px;
     display: block;
-    max-width: 1440px;
+    max-width: 1400px;
     margin: auto;
 }
 
@@ -114,11 +114,12 @@ li.nav_activites:active {
     margin: 15px 0 13px;
 }
 
-.section_texte {
+.section_texte p{
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: black;
+    width: 296px;
 
 }
 
@@ -139,10 +140,11 @@ li.nav_activites:active {
     position: absolute;
 }
 
+/* Input Recherche */
 .groupe_form {
     display: flex;
     align-items: center;
-    margin-top: 12px;
+    margin-top: 20px;
     position: absolute;
 }
 
@@ -178,10 +180,7 @@ li.nav_activites:active {
     height: 49px;
     font-size: 18px;
     font-weight: 700;
-    right: 0%;
-    left: 5%;
-    top: 32.87%;
-    bottom: 0%;
+   
 }
 
 
@@ -199,9 +198,6 @@ li.nav_activites:active {
     top: 28.57%;
     right: 35.54%;
     bottom: 28.57%;
-    
-    
-
 }
 
 /* Pour le boutton de recherche */
@@ -245,23 +241,24 @@ li.nav_activites:active {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 45px;
+    align-items: center;
+    gap: 28px;
     margin-top: 100px;
-    margin-left: 62px;
+    margin-left: 8px;
+    width: 914px;
 }
 
-.titres {
-    display: flex;
-    font-size: 18px;
+.titres_flitres h2{
+    
+    flex-direction: row;
     text-align: center;
+    font-size: 18px;
     width: 54px;
     height: 21px;
-
 }
 /* Filtre économique */
 .eco_icon {
     color: #0065FC;
-    margin-right: 10px;
 }
 
 .rch_eco {
@@ -271,25 +268,23 @@ li.nav_activites:active {
     border-radius: 25px;
     justify-content: space-around;
     align-items: center;
-    padding: 4px 20px 4px 20px;
     box-sizing: border-box;
     width: 175px;
-    height: 48px;
+    height: 50px;
+    padding: 4px 20px 4px 20px;
 }
 
 .text_eco {
     width: 103px;
-    height: 20px;
     font-size: 17px;
     font-weight: 700;
+    padding: 10px 0px 10px 10px;
+    gap: 10px;
 }
 
 /* Filtre familial */
 .fam_icon {
     color: #0065FC;
-    display: flex;
-    flex-direction: row;
-    align-content: space-around;
 }
 
 .rch_fam {
@@ -299,10 +294,9 @@ li.nav_activites:active {
     justify-content: space-around;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
-    padding: 4px 20px;
     box-sizing: border-box;
     width: 136px;
-    height: 48px;
+    height: 50px;
     padding: 4px 20px 4px 20px;
 }
 
@@ -311,13 +305,13 @@ li.nav_activites:active {
     font-weight: 700;
     line-height: 20px;
     width: 64px;
+    padding: 10px 0px 10px 10px;
+    gap: 10px;
 }
 
 /* Filtre romantique */
 .rom_icon {
     color: #0065FC;
-    display: flex;
-    flex-direction: row;
 }
 
 .rch_rom {
@@ -330,7 +324,7 @@ li.nav_activites:active {
     padding: 4px 20px;
     box-sizing: border-box;
     width: 172px;
-    height: 48px;
+    height: 50px;
     padding: 4px 20px 4px 20px;
 }
 
@@ -340,13 +334,13 @@ li.nav_activites:active {
     font-size: 17px;
     line-height: 20px;
     font-weight: 700;
+    padding: 10px 0px 10px 10px;
+    gap: 10px;
 }
 
 /* Filtre animaux autorisés */
 .animaux_icon {
     color: #0065FC;
-    display: flex;
-    flex-direction: row;
 }
 
 .rch_animaux {
@@ -356,19 +350,31 @@ li.nav_activites:active {
     align-items: center;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
-    padding: 4px 20px;
     width: 226px;
     height: 50px;
     box-sizing: border-box;
+    padding: 4px 20px 4px 20px;
 }
 
 .text_animaux {
     font-weight: 700;
     width: 226px;
-    line-height: 20.83px;
+    height: 20px;
+    line-height: 21px;
     font-size: 17px;
+    padding: 10px 0px 10px 10px;
+    gap: 10px;
 
 }
+
+/* Effet au survol des filtres */
+
+.liens_filtres:hover {
+    background-color: #deebff;
+    border-radius: 25px;
+    color: #000000;
+}
+
 /* Fin partie filtre */ 
 
 /* Début partie résultats filtres */
@@ -402,8 +408,9 @@ li.nav_activites:active {
 
 #hebergement {
     display: flex;
-    padding-left: 45px;
-    padding-right: 45px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .hebergement {
@@ -413,6 +420,7 @@ li.nav_activites:active {
     height: 625px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 
@@ -454,6 +462,7 @@ li.nav_activites:active {
     flex-direction: row;
     justify-content: space-around;
     box-sizing: border-box;
+    flex-wrap: wrap;
     margin-top: 30px;
 }
 
@@ -621,22 +630,23 @@ li.nav_activites:active {
 /* CSS pour la partie activités */
 #sectionactivites {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: space-around;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     margin-bottom: 60px;
     margin-top: 55px;
     box-sizing: border-box;
-    padding-left: 45px;
-    padding-right: 45px;
+    margin-left: 20px;
 }
 
 .groupe_activites {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 40px;
+    align-items: center;
+    gap: 50px;
     margin-top: 21px;
+    flex-wrap: wrap;
 }
 
 .activitescard {
@@ -661,32 +671,27 @@ li.nav_activites:active {
     width: 212px;
     height: 30.02px;
     font-weight: 700;
-    margin-left: 55px;
+    margin-left: 10px;
 }
 
 /* Partie description pour le h3 */
-.description {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border-radius: 0 0 20px 20px;
-    background-color: white;
-    height: 56px;
-    width: 302px;
-    top: 389px;
-    
-}
 
 .description h3 {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
     width: 247px;
     height: 15px;
-    left: 19px;
+    padding-left: 20px;
     bottom: 20.51px;
     line-height: 19px;
     font-size: 16px;
+    border-radius: 0 0 20px 20px;
+    background-color: white;
+    height: 56px;
+    width: 302px;
+    box-sizing: border-box;
 }
 
 /* CSS pour les images */
@@ -696,6 +701,7 @@ li.nav_activites:active {
     width: 302px;
     height: 445px;
     object-fit: cover;
+    box-sizing: border-box;
 }
 /* Fin pour la partie activités */
 
@@ -706,16 +712,22 @@ ul{
     list-style-type: none;
 }
 
+.footer a:hover {
+    color: black;
+}
+
 #footer {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     align-items: flex-start;
+    justify-content: flex-start;
+    gap: 250px;
+    flex-wrap: wrap;
     background-color: #F2F2F2;
-    margin-left: 55px;
-    margin-right: 54px;
     padding: 60px ;
-    gap: 300px;
+    max-width: 1400px;
+    height: 191px;
+    margin-bottom: -6%;
 }
 
 .footer ul {
@@ -723,6 +735,13 @@ ul{
     flex-direction: column;
     justify-content: flex-start;
     float: left;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.footer li {
+    font-weight: 400;
+    font-size: 16px;
 }
 
 .footer h4 {
