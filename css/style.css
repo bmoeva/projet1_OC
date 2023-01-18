@@ -198,6 +198,7 @@ li.nav_activites:active {
     top: 28.57%;
     right: 35.54%;
     bottom: 28.57%;
+    box-sizing: border-box;
 }
 
 /* Pour le boutton de recherche */
@@ -408,9 +409,9 @@ li.nav_activites:active {
 
 #hebergement {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+    width: 1340px;
 }
 
 .hebergement {
@@ -530,6 +531,8 @@ li.nav_activites:active {
     background: #F2F2F2;
     border-radius: 20px;
     margin-left: 42px;
+    flex-direction: column;
+    display: flex;
 }
 
 .titre_pp {
@@ -632,11 +635,10 @@ li.nav_activites:active {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    flex-wrap: wrap;
     margin-bottom: 60px;
     margin-top: 55px;
     box-sizing: border-box;
-    margin-left: 20px;
+    flex-wrap: wrap;
 }
 
 .groupe_activites {
@@ -646,7 +648,7 @@ li.nav_activites:active {
     align-items: center;
     gap: 50px;
     margin-top: 21px;
-    flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 .activitescard {
@@ -724,9 +726,9 @@ ul{
     gap: 250px;
     flex-wrap: wrap;
     background-color: #F2F2F2;
-    padding: 60px ;
-    max-width: 1400px;
-    height: 191px;
+    padding: 40px ;
+    width: 1339px;
+    height: 225px;
     margin-bottom: -6%;
 }
 
@@ -750,4 +752,69 @@ ul{
     font-weight: 700;
     font-style: normal;
     font-family: 'Raleway';
+}
+
+/*============ MEDIA QUERIES TABLETTE ===========*/
+
+@media screen and (max-width: 768px) {
+    
+    nav {
+        justify-content: space-between;
+    }
+    
+    #hebergement {
+        flex-direction: column;
+    }
+    .plus_populaires {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 883px;
+        height: 278px;
+    }
+    .container_pp {
+        flex-direction: row;
+        width: 252px;
+        height: 144px;
+    }
+    .cardimg_pp img {
+        width: 106px;
+        height: 144px;
+    }
+
+    /*--------------- Partie activités ---------------*/
+
+    #sectionactivites {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .groupe_activites {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 21px;
+        box-sizing: border-box;
+    }
+
+    .activitescard img {
+        border-radius: 20px 20px 0 0;
+        width: 182px;
+        height: 267px;
+        object-fit: cover;
+        box-sizing: border-box;
+    }
+
+    .description h3 {
+        height: 56px;
+        width: 182px;
+    }
+
+    /*----------- PARTIE FOOTER -------------*/
+
+    #footer {
+        width: 879.65px;
+        gap: 150px;
+    }
 }
