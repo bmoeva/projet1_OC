@@ -233,7 +233,7 @@ li.nav_activites:active {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 45px;
+    gap: 35px;
     margin-top: 40px;
 }
 
@@ -364,7 +364,7 @@ li.nav_activites:active {
 
 .text_animaux {
     font-weight: 700;
-    width: 226px;
+    
     line-height: 20.83px;
     font-size: 17px;
 
@@ -632,7 +632,7 @@ li.nav_activites:active {
     margin-bottom: 60px;
     margin-top: 55px;
     box-sizing: border-box;
-    margin-left: 45px;
+    margin-left: 55px;
     
     
 }
@@ -641,7 +641,7 @@ li.nav_activites:active {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 40px;
+    gap: 43px;
     margin-top: 21px;
     box-sizing: border-box;
 }
@@ -718,10 +718,11 @@ footer {
     flex-direction: row;
     justify-content: flex-start;
     background-color: #F2F2F2;
-    margin-right: 54px;
+    margin-right: 45px;
     padding: 60px;
     gap: 259px;
-    width: 1330px;
+    width: 1230px;
+    margin-left: 55px;
 }
 
 .footer ul {
@@ -780,6 +781,7 @@ footer li {
         justify-content: center;
         width: 883px;
         height: 278px;
+        margin-right: 20px;
     }
 
     .titre_pp {
@@ -965,7 +967,9 @@ footer li {
     }
 
     .rch_filtres {
-        flex-direction: column;
+        flex-direction: row;
+        
+       
     }
     
     /*------- Partie hébergement Marseille et plus populaires-------*/
@@ -1027,7 +1031,6 @@ footer li {
     /*------- Partie activités -------*/
         #sectionactivites {
             flex-direction: column;
-            flex-wrap: wrap;
             justify-content: center;
         }
     
@@ -1046,6 +1049,7 @@ footer li {
             flex-direction: column;
             width: 377px;
             height:501px;
+            gap: 40px;
         }
     }
 
