@@ -797,12 +797,13 @@ footer li {
         
     }
 
-    #texte_pp_sub {
-        top: 27px;
+    #text_pp_sub {
+        margin-top: 27px;
+        margin-bottom: -16px;
     }
 
     .text_pp {
-
+        margin-top: 27px;
     }
 
     .groupe_containerpp {
