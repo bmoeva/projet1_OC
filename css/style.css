@@ -797,6 +797,14 @@ footer li {
         
     }
 
+    #texte_pp_sub {
+        top: 27px;
+    }
+
+    .text_pp {
+
+    }
+
     .groupe_containerpp {
         flex-direction: row;
         align-items: center;
@@ -862,7 +870,7 @@ footer li {
     }
 
     .description {
-        width: 185px;
+        width: 180px;
         height: 56px;
         justify-content: flex-start;
         align-items: flex-start;
@@ -889,7 +897,6 @@ footer li {
 @media screen and (max-width: 767px) {
 
     body {
-        height: 4113px;
         margin: auto;
     }
 /* Partie header et nav */
