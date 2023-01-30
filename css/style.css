@@ -987,7 +987,24 @@ footer li {
     }
 
     .rch_filtres {
+        flex-direction: column;
+        position: relative;
+        align-items: flex-start;
+    }
+
+    .filtres_eco_fam {
+        display: flex;
         flex-direction: row;
+        gap: 14px;
+    }
+
+    .filtres_rom_animaux {
+        display: flex;
+        gap: 14px;
+    }
+
+    .rch_eco, .rch_fam, .rch_rom, .rch_animaux {
+        width: 160px;
     }
 
     .resultatrch {
