@@ -9,8 +9,8 @@ body {
     font-family:'Raleway', sans-serif;
     min-width: 320px;
     display: block;
-    max-width: 1440px;
-    margin: auto;
+    max-width: 100%;
+    margin: 0;
 }
 
 h1, h2, h3 {
@@ -904,39 +904,52 @@ footer li {
     header{
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
     }
 
-    .menunav {
-        display: flex;
-        flex-direction: row;
+    header .mon_logo {
         justify-content: center;
         align-items: center;
+        position: relative;
     }
 
-    nav a:focus,
-    nav a:active,
-    nav a:hover {
-        border-bottom: 3px solid #0065FC;
-        padding-bottom: px;
+    nav ul li {
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-bottom: 23.09px;
+        
     }
 
-    li.nav_hebergement {
-        width: 123px;
-    }
-    li.nav_activites {
-        width: 63px;
+    nav ul {
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        
     }
 
+    .nav_hebergement {
+        width: 187px;
+        border-bottom: 3px solid #F2F2F2;
+    }
+
+    .nav_activites {
+        width: 188px;
+        border-bottom: 3px solid #F2F2F2;
+    }
+
+    .nav_hebergement:hover,
+    .nav_activites:hover {
+        border-bottom: #0065FC solid 3px;
+    }
+  
     li.nav_hebergement:hover, 
     li.nav_activites:hover, 
     li.nav_hebergement:focus, 
     li.nav_activites:focus, 
     li.nav_hebergement:active, 
     li.nav_activites:active {
-    border-top: 3px solid #0065FC;;
-    color: #0065FC; 
-    border-top: none; 
+    border-top: none;
 }
 
 /*------ Section recherche et filtres -------*/
@@ -960,7 +973,6 @@ footer li {
 
 .srch_btn_phn {
     display: flex;
-    display: none;
     flex-direction: row;
     align-items: center;
     background-color: #0065FC;
@@ -976,8 +988,16 @@ footer li {
 
     .rch_filtres {
         flex-direction: row;
-        
-       
+    }
+
+    .resultatrch {
+        align-items: flex-start;
+    }
+
+    .resultat_rch {
+        width: 298px;
+        height: 57px;
+        font-weight: 400;
     }
     
     /*------- Partie hébergement Marseille et plus populaires-------*/
@@ -1011,8 +1031,7 @@ footer li {
         .titre_pp {
             top: 575px;
             justify-content: space-around;
-            left: 300px;
-            width: 262px;
+            left: 55px;
         }
     
         .titre_pp i {
@@ -1025,7 +1044,7 @@ footer li {
     
         .container_pp {
             width: 334px;
-    
+            height: 144px;
         }
     
         .groupe_containerpp {
@@ -1033,6 +1052,11 @@ footer li {
             align-items: center;
             gap: 1px;
             margin-top: -10px;
+        }
+
+        .cardimg_pp img{
+            width: 137px;
+            height: 144px;
         }
     
     
