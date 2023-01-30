@@ -7,10 +7,9 @@
 }
 body {
     font-family:'Raleway', sans-serif;
-    min-width: 320px;
     display: block;
     max-width: 100%;
-    margin: 0;
+    margin: auto;
 }
 
 h1, h2, h3 {
@@ -39,13 +38,12 @@ a:hover {
 }
 
 /* Ici ce trouve le css pour mon header */
-
-/* Menu de navigation */
-
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+/* Menu de navigation */
 
 ul.menunav {
     display: flex;
@@ -233,7 +231,7 @@ li.nav_activites:active {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 35px;
+    gap: 31px;
     margin-top: 40px;
 }
 
@@ -245,6 +243,19 @@ li.nav_activites:active {
     height: 21px;
 
 }
+
+.filtres_eco_fam {
+    display: flex;
+    flex-direction: row;
+    gap: 31px;
+}
+
+.filtres_rom_animaux {
+    display: flex;
+    flex-direction: row;
+    gap: 31px;
+}
+
 /* Filtre économique */
 .eco_icon {
     color: #0065FC;
@@ -404,7 +415,7 @@ li.nav_activites:active {
     display: flex;
     padding-left: 45px;
     padding-right: 45px;
-    gap: 45px;
+    gap: 50px;
 }
 
 .hebergement {
@@ -525,7 +536,7 @@ li.nav_activites:active {
 .titre_pp {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .titre_texte {
@@ -534,12 +545,16 @@ li.nav_activites:active {
     line-height: 26px;
     margin-top: 41px;
     width: 205px;
+    margin-left: 40px;
 
 }
 
 .groupe_containerpp {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
 }
 
 .titre_pp i {
@@ -547,6 +562,7 @@ li.nav_activites:active {
     width: 18px;
     height: 15px;
     margin-top: 46px;
+    margin-right: 40px;
 }
 
 .container_pp {
@@ -556,6 +572,7 @@ li.nav_activites:active {
     background: #ffffff;
     margin-top: 33px;
     margin-left: 37px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
 }
 
 .infos {
@@ -749,11 +766,6 @@ footer li {
 
 @media screen and (max-width: 992px) {
     
-    body {
-        max-width: 1024px;
-        height: 2076px;
-        margin: auto;
-    }
 
     /*---- Navigation ----*/
     nav {
@@ -763,7 +775,12 @@ footer li {
     /*------ Partie filtres ------*/
 
     .rch_filtres {
-        gap: 35px;
+        gap: 21px;
+    }
+
+    .filtres_eco_fam, 
+    .filtres_rom_animaux {
+        gap: 21px;
     }
 
     /*---- Hébergement Marseille ----*/
@@ -779,22 +796,23 @@ footer li {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 883px;
+        width: 896px;
         height: 278px;
-        margin-right: 20px;
     }
 
     .titre_pp {
-        width: 206px;
         height: 26px;
         font-size: 22px;
         font-weight: 700;
         position: absolute;
         top: 1160px;
-        left: 80px;
+        left: 55px;
         line-height: 16px;
         align-items: flex-start;
-        
+    }
+
+    .titre_texte {
+        margin-left: 25px;
     }
 
     #text_pp_sub {
@@ -820,6 +838,7 @@ footer li {
         height: 15px;
         position: absolute;
         left: 785px;
+        margin-left: 25px;
     }
 
     .infos {
@@ -852,6 +871,7 @@ footer li {
         align-items: flex-start;
         width: 878px;
         height: 331px;
+        margin-left: 49px;
     }
 
     .groupe_activites {
@@ -860,7 +880,7 @@ footer li {
         align-items: center;
         margin-top: 21px;
         box-sizing: border-box;
-        gap: 50px;
+        gap: 55px;
     }
 
     .activitescard img {
@@ -887,7 +907,7 @@ footer li {
     /*----------- PARTIE FOOTER -------------*/
 
     footer {
-        width: 770px;
+        width: 778px;
         gap: 90px;
         margin-left: 50px;
     }
@@ -911,6 +931,7 @@ footer li {
         justify-content: center;
         align-items: center;
         position: relative;
+        margin-left: -25px;
     }
 
     nav ul li {
@@ -928,13 +949,13 @@ footer li {
         
     }
 
-    .nav_hebergement {
-        width: 187px;
+    li.nav_hebergement {
+        width: 360px;
         border-bottom: 3px solid #F2F2F2;
     }
 
-    .nav_activites {
-        width: 188px;
+    li.nav_activites {
+        width: 361px;
         border-bottom: 3px solid #F2F2F2;
     }
 
@@ -985,6 +1006,7 @@ footer li {
     left: 380px;
     color: white;
     }
+/*------- Partie filtres ---------*/
 
     .rch_filtres {
         flex-direction: column;
@@ -1001,10 +1023,20 @@ footer li {
     .filtres_rom_animaux {
         display: flex;
         gap: 14px;
+        margin-top: -5px;
     }
 
-    .rch_eco, .rch_fam, .rch_rom, .rch_animaux {
-        width: 160px;
+    .rch_eco, .rch_fam, 
+    .rch_rom, .rch_animaux {
+        width: 166px;
+        height: 50px;
+        gap: 7px;
+        justify-content: start;
+    }
+
+    .text_animaux, .text_eco,
+    .text_fam, .text_rom {
+        font-size: 11px;
     }
 
     .resultatrch {
@@ -1017,42 +1049,72 @@ footer li {
         font-weight: 400;
     }
     
-    /*------- Partie hébergement Marseille et plus populaires-------*/
+/*------- Partie hébergement Marseille et plus populaires-------*/
+    
+    /*----- Partie hébergement Marseille------*/
+
         #hebergement {
             flex-direction: column-reverse;
         }
     
-        .plus_populaires {
-            flex-direction: column;
-            width: 375px;
-            height: 580px;
-        }
-    
-    
         .hebergement {
             flex-direction: row;
-            width: 335px;
+            width: 375px;
             height: 1299px;
             flex-wrap: wrap;
             justify-content: center;
+            margin-top: -26px;
+            background: none;
+            margin-bottom: 45px;
+        }
+
+        .titre_hebergementMarseille h2 {
+           margin-top: 0px;
+           margin-left:-55px;
+        }
+
+        .cardimg img {
+            width: 335px;
+            height: 124px;
+        }
+
+        .ligne_1, .ligne_2 {
+            width: 335px;
+            height: 199px;
+            box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
         }
     
         .premiereligne {
             flex-direction: column;
+            gap: 10px;
         }
     
         .deuxiemeligne {
             flex-direction: column;
+            gap: 10px;
+            padding: 0px;
+            margin-top: -10px;
         }
     
+    /*------ Partie hébergement les plus populaires -------*/
+        .plus_populaires {
+            flex-direction: column;
+            width: 375px;
+            height: 580px;
+            border-radius: none;
+        }
+
         .titre_pp {
-            top: 575px;
-            justify-content: space-around;
-            left: 55px;
+            position: absolute;
+            left: 21px;
+            margin-left: 20px;
+            width: 262px;
+            height: 26px;
+            top: 658px;
         }
     
         .titre_pp i {
-            left: 290px;
+            left: 309px;
         }
     
         .titre_texte {
@@ -1062,13 +1124,15 @@ footer li {
         .container_pp {
             width: 334px;
             height: 144px;
+            box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+            margin-top: 10px;
         }
     
         .groupe_containerpp {
             flex-direction: column;
             align-items: center;
             gap: 1px;
-            margin-top: -10px;
+            margin-top: 39px;
         }
 
         .cardimg_pp img{
@@ -1081,6 +1145,7 @@ footer li {
         #sectionactivites {
             flex-direction: column;
             justify-content: center;
+            display: none;
         }
     
         .titre_activites {
@@ -1097,8 +1162,12 @@ footer li {
         footer {
             flex-direction: column;
             width: 377px;
-            height:501px;
             gap: 40px;
+            margin-left: 0px;
+        }
+
+        .footer {
+            margin-left: -20px;
         }
     }
 
