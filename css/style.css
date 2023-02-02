@@ -1222,19 +1222,26 @@ footer li {
     
     
     /*------- Partie activités -------*/
-        #sectionactivites {
+        
+    #sectionactivites {
             flex-direction: column;
             justify-content: center;
+            margin-left: 22px;
+            margin-top: 78px;
+            margin-bottom: 90px;
         }
     
         .titre_activites {
-            width: 212px;
+            width: 142px;
             height: 30.02px;
+            display: flex;
         }
     
         .groupe_activites {
             flex-direction: column;
             flex-wrap: row;
+            margin-top: 24px;
+            gap: 30.6px;
         }
 
         .activitescard img{
@@ -1244,6 +1251,10 @@ footer li {
 
         .groupe_activites img {
             height: 134px;
+        }
+
+        .description h3 {
+           margin-left: 20px;
         }
     
         /*------ Partie footer -------*/
@@ -1256,7 +1267,7 @@ footer li {
         }
 
         .footer {
-            margin-left: 20px;
+            margin-left: 0px;
         }
     }
 
