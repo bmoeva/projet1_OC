@@ -1004,12 +1004,12 @@ footer li {
     }
 
     li.nav_hebergement {
-        width: 360px;
+       
         border-bottom: 3px solid #F2F2F2;
     }
 
     li.nav_activites {
-        width: 361px;
+        margin-right: 15px;
         border-bottom: 3px solid #F2F2F2;
     }
 
@@ -1031,6 +1031,7 @@ footer li {
 
 .section_recherche {
     margin-top: 31px;
+    margin-left: 22px;
 }
 .section_recherche h1{
     width: 298px;
@@ -1038,8 +1039,12 @@ footer li {
     flex-wrap: wrap;
 }
 
+.groupe_form {
+    margin-top: 40px;
+}
+
 .inp_recherche {
-    width: 300px;
+    width: 288px;
 }
 
 #btn_rsh_desktop {
@@ -1057,7 +1062,7 @@ footer li {
     gap: 10px;
     width: 49px;
     height: 49px;
-    left: 380px;
+    left: 300px;
     color: white;
     }
 /*------- Partie filtres ---------*/
@@ -1066,17 +1071,18 @@ footer li {
         flex-direction: column;
         position: relative;
         align-items: flex-start;
+        margin-left: -5px;
     }
 
     .filtres_eco_fam {
         display: flex;
         flex-direction: row;
-        gap: 14px;
+        gap: 13px;
     }
 
     .filtres_rom_animaux {
         display: flex;
-        gap: 14px;
+        gap: 13px;
         margin-top: -5px;
     }
 
@@ -1088,6 +1094,18 @@ footer li {
         justify-content: start;
     }
 
+    .rch_eco i, .rch_animaux i {
+        margin-left: -9px;
+    }
+
+    .rch_fam i, .rch_rom i {
+        margin-left: -9px;
+    }
+
+    .text_eco {
+        margin-left: -12px;
+    }
+
     .text_animaux, .text_eco,
     .text_fam, .text_rom {
         font-size: 11px;
@@ -1095,6 +1113,8 @@ footer li {
 
     .resultatrch {
         align-items: flex-start;
+        margin-left: -2px;
+        margin-top: 45px;
     }
 
     .resultat_rch {
@@ -1118,7 +1138,7 @@ footer li {
             height: 1299px;
             flex-wrap: wrap;
             justify-content: center;
-            margin-top: -26px;
+            margin-top: -69px;
             background: none;
             margin-bottom: 45px;
         }
@@ -1150,26 +1170,30 @@ footer li {
             padding: 0px;
             margin-top: -10px;
         }
+
+        #afficher_plus {
+            display: none;
+        }
     
     /*------ Partie hébergement les plus populaires -------*/
         .plus_populaires {
             flex-direction: column;
             width: 375px;
             height: 580px;
-            border-radius: none;
+            border-radius: 0;
+            margin-top: -10px;
         }
 
         .titre_pp {
             position: absolute;
-            left: 21px;
-            margin-left: 20px;
+            left: 2px;
             width: 262px;
             height: 26px;
-            top: 658px;
+            top: 669px;
         }
     
         .titre_pp i {
-            left: 309px;
+            left: 305px;
         }
     
         .titre_texte {
@@ -1187,7 +1211,8 @@ footer li {
             flex-direction: column;
             align-items: center;
             gap: 1px;
-            margin-top: 39px;
+            margin-top: 20px;
+            margin-left: 5px;
         }
 
         .cardimg_pp img{
@@ -1200,7 +1225,6 @@ footer li {
         #sectionactivites {
             flex-direction: column;
             justify-content: center;
-            display: none;
         }
     
         .titre_activites {
@@ -1211,6 +1235,11 @@ footer li {
         .groupe_activites {
             flex-direction: column;
             flex-wrap: row;
+        }
+
+        .activitescard img{
+            width: 334px;
+            line-height: 134px;
         }
     
         /*------ Partie footer -------*/
