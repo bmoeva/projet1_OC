@@ -1241,6 +1241,10 @@ footer li {
             width: 334px;
             line-height: 134px;
         }
+
+        .groupe_activites img {
+            height: 134px;
+        }
     
         /*------ Partie footer -------*/
         footer {
