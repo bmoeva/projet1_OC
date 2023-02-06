@@ -944,9 +944,12 @@ footer li {
     /*----------- PARTIE FOOTER -------------*/
 
     footer {
-        width: 92%;
+        position: relative;
+        width: 880px;
+        margin-left: 55px;
         gap: 65px;
         padding: 40px;
+        margin-left: ;
     }
 }
 
