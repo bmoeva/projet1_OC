@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Intégration de la police -->
@@ -17,6 +17,7 @@
 	<title>BOOKI-Agence de voyage</title>
 </head>
     <body>
+      <main class="contenu_main">
       <!-- Ceci est mon en-tête -->
         <header> 
           <div class="mon_logo"> <!-- Mon logo sera ici -->
@@ -37,13 +38,11 @@
                     </ul>
             </nav>
         </header>
-
-        <main class="contenu_main">
-            <section class="section_recherche">
+        <section class="section_recherche">
                 <h1 class="titre_section_recherche">Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p class="section_texte">En plein centre-ville ou en pleine nature</p>
             <form method="post" class="form">
-                <div class="groupe_form">
+                <div class="groupe_form"> 
                   <div class="localisation">
                     <i class="fa-sharp fa-solid fa-location-dot "></i>
                   </div>
@@ -121,7 +120,7 @@
                    <div class="infos_hebergementMarseille">
                     <h3 class="titre_h3">Auberge La Canebière</h3>
                     <p class="textprix"> Nuit à partir de 25<strong class="prix">€</strong></p>
-                   </div>
+                   
                       <div class="note_hebergement">
                         <span class="etoiles_bleu">
                           <i class="fa-solid fa-star"></i>
@@ -133,6 +132,7 @@
                         <i class="fa-solid fa-star"></i>
                       </span>
                       </div>
+                   </div>
                   </a>
                 </div>
 
@@ -287,7 +287,7 @@
             <div class="infos_texte">
               <h3 class="titre_infos">Hôtel Le soleil du matin</h3>
               <p class="text_pp">Nuit à partir de 128<strong> €</strong></p>
-            </div>
+           
           <div class="etoiles">
             <span class="etoiles_bleu">
               <i class="fa-solid fa-star"></i>
@@ -300,6 +300,7 @@
             </span>
           </div>
           </div>
+      </div>
       </div>
       </a>
     </div>
@@ -315,7 +316,7 @@
             <div class="infos_texte">
                 <h3 class="titre_infos">Chambres d'hôte Au coeur de l'eau</h3>
                 <p id="text_pp_sub" class="text_pp">Nuit à partir de 71<strong> €</strong></p>
-            </div>
+            
             <div class="etoiles">
               <span class="etoiles_bleu">
                 <i class="fa-solid fa-star"></i>
@@ -328,6 +329,7 @@
               </span>
             </div>
           </div>
+        </div>
         </div>
       </a>
     </div>
@@ -343,7 +345,7 @@
             <div class="infos_texte_3">
                 <h3 class="titre_infos_3">Hôtel Bleu et Blanc</h3>
                 <p class="text_pp_3">Nuit à partir de 68<strong> €</strong></p>
-            </div>
+            
             <div class="etoiles_3">
               <span class="etoiles_bleu">
                   <i class="fa-solid fa-star"></i>
@@ -357,6 +359,7 @@
             </div>
           </div>
         </div>
+          </div>
       </a>
     </div>
   </div>
@@ -372,9 +375,10 @@
     <div class="groupe_activites">
           <div class="activitescard">
             <a href="">
-            <img src="images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Photo de bateaux du Vieux-Port">
+            <img src="images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" 
+            alt="Photo de bateaux du Vieux-Port">
             <div class="description">
-            <h3>Vieux-Port</h3>
+              <h3>Vieux-Port</h3>
             </div>
             </a>
           </div>
