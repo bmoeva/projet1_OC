@@ -1041,8 +1041,9 @@ footer li {
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 20px;
-    margin-left: 0px;
+    left: 14px;
+    max-width: 100%;
+    margin: auto;
 }
 
 .section_recherche h1{
@@ -1094,7 +1095,7 @@ footer li {
         flex-direction: column;
         position: relative;
         align-items: flex-start;
-        margin-left: 5px;
+        margin-left: 0px;
         display: flex;
         margin-top: 25px;
     }
@@ -1199,6 +1200,10 @@ footer li {
             margin-top: 13px;
         }
 
+        .titre_h3, .textprix, .note_hebergement {
+            margin-left: 15px;
+        }
+
         #afficher_plus {
             display: none;
         }
@@ -1212,13 +1217,12 @@ footer li {
         }
 
         .titre_pp {
-            justify-content: space-between;
-            position: relative;
             height: 26px;
         }
     
         .titre_texte {
             width: 262px;
+            margin-left: 15px;
         }
     
         .container_pp {
