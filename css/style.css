@@ -674,7 +674,7 @@ li.nav_activites:active {
 #sectionactivites {
     display: flex;
     flex-direction: column;
-    height: 650px;
+    margin-bottom: 69px;
     margin-top: 60px;
 }
 
@@ -910,7 +910,7 @@ footer li {
 
     #sectionactivites {
         flex-direction: column;
-        height: 500px;
+        margin-bottom: px;
     }
 
     .titre_activites {
@@ -949,7 +949,6 @@ footer li {
         margin-left: 55px;
         gap: 65px;
         padding: 40px;
-        margin-left: ;
     }
 }
 
@@ -958,9 +957,9 @@ footer li {
 @media screen and (max-width: 767px) {
 
 /* Partie header et nav */
+
     .contenu_main {
-        width: 100%;
-        margin: auto;
+        max-width: 100%;
     }
 
     header{
@@ -973,7 +972,6 @@ footer li {
         justify-content: center;
         align-items: center;
         position: relative;
-        margin-left: -25px;
     }
 
     nav ul li {
@@ -1020,6 +1018,9 @@ footer li {
 .section_recherche {
     display: flex;
     flex-direction: column;
+    position: relative;
+    left: 20px;
+    margin-left: 0px;
 }
 
 .section_recherche h1{
@@ -1028,22 +1029,31 @@ footer li {
     flex-wrap: wrap;
 }
 
+.section_texte {
+    margin-top: 0px;
+}
+
 .groupe_form {
-    margin-top: 40px;
+    margin-top: 26px;
 }
 
 .inp_recherche {
-    width: 288px;
+    width: 68%;
 }
 
 #btn_rsh_desktop {
     display: none;
 }
 
+.localisation {
+    font-size: 17px;
+}
+
 .srch_btn_phn {
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: relative;
     background-color: #0065FC;
     border: #0065FC solid 1px;
     border-radius: 0 15px 15px 0;
@@ -1051,9 +1061,11 @@ footer li {
     gap: 10px;
     width: 49px;
     height: 49px;
-    left: 300px;
+    left: -12px;
     color: white;
+    font-size: 17px;
     }
+    
 /*------- Partie filtres ---------*/
 
     .rch_filtres {
@@ -1061,6 +1073,7 @@ footer li {
         position: relative;
         align-items: flex-start;
         margin-left: -5px;
+        display: flex;
     }
 
     .filtres_eco_fam {
@@ -1118,6 +1131,7 @@ footer li {
 
         #hebergement {
             flex-direction: column-reverse;
+            width: 100%;
         }
     
         .hebergement {
@@ -1125,37 +1139,40 @@ footer li {
             width: 100%;
             height: 100%;
             flex-wrap: wrap;
-            display: none;
-            margin-top: -69px;
+            display: flex;
+            margin-top: 0px;
             background: none;
             margin-bottom: 45px;
         }
 
         .titre_hebergementMarseille h2 {
-           margin-top: 0px;
+           margin-top: 26px;
+           left: 20px;
         }
 
         .cardimg img {
-            width: 335px;
+            width: 100%;
             height: 124px;
         }
 
         .ligne_1, .ligne_2 {
-            width: 335px;
+            width: 93%;
             height: 199px;
+            margin: auto;
             box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
         }
     
         .premiereligne {
             flex-direction: column;
             gap: 10px;
+            margin-top: -3px;
         }
     
         .deuxiemeligne {
             flex-direction: column;
             gap: 10px;
             padding: 0px;
-            margin-top: -10px;
+            margin-top: 13px;
         }
 
         #afficher_plus {
@@ -1166,17 +1183,14 @@ footer li {
         .plus_populaires {
             flex-direction: column;
             width: 100%;
-            height: 580px;
+            height: 619px;
             border-radius: 0;
         }
 
         .titre_pp {
-            width: 262px;
+            justify-content: space-between;
+            position: relative;
             height: 26px;
-        }
-    
-        .titre_pp i {
-            left: 305px;
         }
     
         .titre_texte {
@@ -1184,18 +1198,20 @@ footer li {
         }
     
         .container_pp {
-            width: 334px;
+            width: 93%;
             height: 144px;
             box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
-            margin-top: 10px;
+            margin-top: -18px;
+            margin-left: 20px;
+            margin-right: 22px;
         }
     
         .groupe_containerpp {
             flex-direction: column;
             align-items: center;
-            gap: 1px;
-            margin-top: 20px;
-            margin-left: 5px;
+            gap: 0px;
+            margin-top: 104px;
+
         }
 
         .cardimg_pp img{
@@ -1208,22 +1224,43 @@ footer li {
         #sectionactivites {
             flex-direction: column;
             justify-content: center;
-            display: none;
+            margin: auto;
+            width: 93%;
+        }
+
+        .titre_activites {
+            margin-left: 0px;
         }
     
-        .titre_activites {
-            width: 212px;
-            height: 30.02px;
+        .titre_activites h2{
+            flex-wrap: wrap;
+            width: 204px;
+            height: 32px;
+            margin-left: 0px;
         }
     
         .groupe_activites {
             flex-direction: column;
             flex-wrap: row;
+            margin-top: 3px;
+        }
+
+        .activitescard {
+            margin-bottom: 24px;
         }
 
         .activitescard img{
-            width: 334px;
-            line-height: 134px;
+            width: 100%;
+            height: 190px;
+        }
+
+        .description {
+            width: 247px;
+        }
+
+        .description h3 {
+            width: 247px;
+            margin-left: 19px
         }
     
         /*------ Partie footer -------*/
@@ -1233,9 +1270,10 @@ footer li {
             width: 100%;
             gap: 40px;
             margin-left: 0;
+            margin-top: 80px
         }
 
         .footer {
-            margin-left: 20px;
+            margin-left:0px;
         }
     }
