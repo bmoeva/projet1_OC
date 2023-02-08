@@ -9,7 +9,7 @@ body {
 }
 
 .contenu_main {
-    width: 1400px;
+    max-width: 1400px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -85,7 +85,8 @@ li.nav_activites:active {
 }
 
 .mon_logo {
-    padding-top: 40px;
+    padding-top: 59px;
+    margin-left: 25px;
 }
 
 /* Ici c'est le css pour la partie recherche */
@@ -489,7 +490,7 @@ li.nav_activites:active {
 
 .note_hebergement {
     margin-left: 14px;
-    margin-top: 7px;
+    margin-top: 4px;
 }
 
 .note_hebergement i {
@@ -626,7 +627,8 @@ li.nav_activites:active {
 
 .etoiles {
     height: 12px;
-    margin-top: 55px;
+    margin-top: 46px;
+    margin-bottom: 4px;
 }
 
 .etoiles_3 i {
@@ -700,6 +702,7 @@ li.nav_activites:active {
     font-size: 22px;
     width: 212px;
     font-weight: 700;
+    margin-left: 28px;
 }
 
 /* Partie description pour le h3 */
@@ -869,7 +872,7 @@ footer li {
     }
 
     .infos_3 {
-        margin-top: -25px;
+        margin-top: -43px;
         margin-left: 10px;
     }
 
@@ -882,6 +885,11 @@ footer li {
         margin-bottom: -19px;
     }
 
+    .etoiles {
+        margin-top: 50px;
+        margin-bottom: -4px;
+    }
+
     #text_pp_sub {
         margin-top: 27px;
         margin-bottom: -16px;
@@ -892,12 +900,23 @@ footer li {
         padding: 0;
         gap: 7px;
         margin-left: 10px;
+        margin-top: -29px;
+    }
+
+    .infos_texte h3 {
+        width: 111px;
+        font-size: 14px;
+    }
+
+    .infos_texte_3 h3 {
+        width: 111px;
+        font-size: 14px;
     }
 
     .infos p {
         width: 132px;
         font-size: 13px;
-        margin-top: 10px;
+        margin-top: -5px;
     }
 
     .titre_infos {
@@ -960,43 +979,46 @@ footer li {
 
     .contenu_main {
         max-width: 100%;
+        margin:0;
     }
 
     header{
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
     }
 
     header .mon_logo {
-        justify-content: center;
-        align-items: center;
         position: relative;
+        display: flex;
+        justify-content: center;
     }
 
     nav ul li {
         text-align: center;
-        margin-left: 0px;
-        margin-right: 0px;
         padding-bottom: 23.09px;
         
+    }
+
+    nav {
+        width: 100%;
+        margin:0;
     }
 
     nav ul {
         align-items: center;
         justify-content: center;
         position: relative;
-        
     }
 
     li.nav_hebergement {
-       
         border-bottom: 3px solid #F2F2F2;
+        width: 100%;
     }
 
     li.nav_activites {
         margin-right: 15px;
         border-bottom: 3px solid #F2F2F2;
+        width: 100%;
     }
 
     .nav_hebergement:hover,
@@ -1219,6 +1241,14 @@ footer li {
         .cardimg_pp img{
             width: 137px;
             height: 144px;
+        }
+
+        .infos {
+            margin-left: 15px
+        }
+
+        .infos p {
+            margin-top:;
         }
     
     
