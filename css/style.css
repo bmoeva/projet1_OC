@@ -56,24 +56,15 @@ ul.menunav:hover {
     font-weight: 500;
 }
 
-li.nav_hebergement {
+li.nav_menunav {
     width: 200px;
     text-align: center;
     padding-top: 40px;
 }
 
-li.nav_activites {
-    width: 200px;
-    text-align: center;
-    padding-top: 40px;
-}
-
-li.nav_hebergement:hover, 
-li.nav_activites:hover, 
-li.nav_hebergement:focus, 
-li.nav_activites:focus, 
-li.nav_hebergement:active, 
-li.nav_activites:active {
+li.nav_menunav:hover, 
+li.nav_menunav:focus, 
+li.nav_menunav:active {
     border-top: 3px solid #0065FC;;
     color: #0065FC;  
 }
@@ -1011,27 +1002,23 @@ footer li {
         position: relative;
     }
 
-    li.nav_hebergement {
+    li.nav_menunav {
         border-bottom: 3px solid #F2F2F2;
         width: 100%;
     }
 
-    li.nav_activites {
+    li.nav_menunav {
         border-bottom: 3px solid #F2F2F2;
         width: 100%;
     }
 
-    .nav_hebergement:hover,
-    .nav_activites:hover {
+    .nav_menunav:hover {
         border-bottom: #0065FC solid 3px;
     }
   
-    li.nav_hebergement:hover, 
-    li.nav_activites:hover, 
-    li.nav_hebergement:focus, 
-    li.nav_activites:focus, 
-    li.nav_hebergement:active, 
-    li.nav_activites:active {
+    li.nav_menunav:hover, 
+    li.nav_menunav:focus, 
+    li.nav_menunav:active {
     border-top: none;
 }
 
