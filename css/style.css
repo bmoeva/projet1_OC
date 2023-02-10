@@ -186,12 +186,7 @@ li.nav_activites:active {
     line-height: 21.13px;
     font-size: 18px;
     text-align: center;
-    padding: auto;
     padding-left: 15px;
-    
-    
-    
-
 }
 
 /* Pour le boutton de recherche */
@@ -929,7 +924,6 @@ footer li {
 
     #sectionactivites {
         flex-direction: column;
-        margin-bottom: px;
     }
 
     .titre_activites {
@@ -991,6 +985,8 @@ footer li {
         position: relative;
         display: flex;
         justify-content: center;
+        margin-left: 0;
+        padding-top: 21px;
     }
 
     nav ul li {
@@ -1002,6 +998,11 @@ footer li {
     nav {
         width: 100%;
         margin:0;
+    }
+
+    ul.menunav {
+        padding-left: 0;
+        margin-top: 0;
     }
 
     nav ul {
@@ -1016,7 +1017,6 @@ footer li {
     }
 
     li.nav_activites {
-        margin-right: 15px;
         border-bottom: 3px solid #F2F2F2;
         width: 100%;
     }
@@ -1041,19 +1041,23 @@ footer li {
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 14px;
-    max-width: 100%;
-    margin: auto;
+    margin-left: 15px;
+    margin-top: 0;
 }
 
 .section_recherche h1{
-    width: 298px;
+    width: 90%;
     height: 52px;
     flex-wrap: wrap;
+    display: flex;
 }
 
 .section_texte {
     margin-top: 0px;
+}
+
+form {
+    width: 100%;
 }
 
 .groupe_form {
@@ -1141,10 +1145,12 @@ footer li {
     .resultatrch {
         align-items: baseline;
         margin-bottom: 4px;
+        margin-left: 0;
     }
 
     .resultatrch  p{
         height: 57px;
+        width: 298px;
         flex-wrap: wrap;
         display: flex;
         
@@ -1250,10 +1256,6 @@ footer li {
         .infos {
             margin-left: 15px
         }
-
-        .infos p {
-            margin-top:;
-        }
     
     
     /*------- Partie activités -------*/
@@ -1277,7 +1279,6 @@ footer li {
     
         .groupe_activites {
             flex-direction: column;
-            flex-wrap: row;
             margin-top: 3px;
         }
 
